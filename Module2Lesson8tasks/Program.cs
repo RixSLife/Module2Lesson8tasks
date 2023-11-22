@@ -12,6 +12,19 @@
 
             //Zadanie nr 3
             //Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
+            Console.WriteLine("\n");
+            Console.WriteLine("Zadanie nr 3\n");
+            Console.WriteLine("Zaimplementuj ciag Fibonacciego.");
+            int a3 = 1;
+            int b3 = 1;
+            while (a3 < 500)
+            {
+                int c3 = a3 + b3;
+                Console.WriteLine($"{a3} + {b3} = {c3}");
+                b3 = a3 + b3;
+                a3++;
+            }
+
 
             //Zadanie nr 4
             //Napisz program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej liczby w formie jak poniżej:
@@ -52,7 +65,7 @@
             //Zadanie nr 10
             //Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb.
 
-
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
