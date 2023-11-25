@@ -9,14 +9,16 @@ namespace Module2Lesson8tasks
         {
             //Zadanie nr 1
             //Napisz program, który sprawdzi ile jest liczb pierwszych w zakresie 0 – 100.
-            Console.WriteLine("\n");
-            Console.WriteLine("Zadanie nr 1\n");
-            Console.WriteLine("Ponizej program wyswietli ilosc liczb pierwszych w zakresie 0-100:");
-            int a = 1;
+           // Console.WriteLine("\n");
+           // Console.WriteLine("Zadanie nr 1\n");
+           // Console.WriteLine("Ponizej program wyswietli ilosc liczb pierwszych w zakresie 0-100:");
+           // int a = 1;
 
-            while (a == 101)
+          //  while (a == 101)
             {
-
+          //      if (b = a % a)
+          //      Console.WriteLine($"{b}");
+          //      a++;
             }
 
             //Zadanie nr 2
@@ -36,20 +38,11 @@ namespace Module2Lesson8tasks
             while (a3 < x3)
             {
                 int c3 = b3 + a3;
-                int d3 = c3 + b3;
-                int e3 = d3 + c3;
-                int f3 = e3 + d3;
-                int g3 = f3 + e3;
-                Console.WriteLine($"{a3}");
                 Console.WriteLine($"{b3}");
+                Console.WriteLine($"{a3}");
                 Console.WriteLine($"{c3}");
-                Console.WriteLine($"{d3}");
-                Console.WriteLine($"{e3}");
-                Console.WriteLine($"{f3}");
-                Console.WriteLine($"{g3}");
-                a3 = g3 + f3;
-                b3 = a3 + g3;
-
+                b3 = a3 + c3;
+                a3 = c3 + b3;
             }
 
             //Zadanie nr 4
