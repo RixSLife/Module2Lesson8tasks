@@ -10,33 +10,44 @@ namespace Module2Lesson8tasks
         {
             //Zadanie nr 1
             //Napisz program, który sprawdzi ile jest liczb pierwszych w zakresie 0 – 100.
-            Console.WriteLine("Zadanie nr 1\n");
-            Console.WriteLine("Ponizej program wyswietli ilosc liczb pierwszych w zakresie 0-100:");
+            //Console.WriteLine("Zadanie nr 1\n");
+            //Console.WriteLine("Ponizej program wyswietli ilosc liczb pierwszych w zakresie 0-100:");
+            //int a = 0;
+            //while (a < 101)
+            {
+
+            }
 
             //Zadanie nr 2
             //Napisz program, w którym za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000.
             Console.WriteLine("\nZadanie nr 2\n");
             Console.WriteLine("Program wyswietli wszystkie liczby parzyste w zakresie 0-1000:");
-            int i = 1;
-            while (i < 1001)
+            int a2 = 0;
+            do
             {
-                if ((i % 2) == 0)
+                if (a2 == 0)
                 {
-                    Console.Write($" {i}");
-                    i++;
+                    a2++;
+                }
+                else if ((a2 % 2) == 0)
+                {
+                    Console.Write($" {a2}");
+                    a2++;
                 }
                 else
                 {
-                    i++;
+                    a2++;
                 }
             }
+            while (a2 < 1001);
 
-            //Zadanie nr 3
-            //Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
-            Console.WriteLine("\nZadanie nr 3\n");
+                //Zadanie nr 3
+                //Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
+                Console.WriteLine("\nZadanie nr 3\n");
             Console.WriteLine("Podaj ilosc wartosci ciag Fibonacciego ktore chcesz wyswietlic:");
             string userInput3 = Console.ReadLine();
             int x3;
+            int ax3 = 0;
             int.TryParse(userInput3, out x3);
             int a3 = 1;
             int b3 = 1;
@@ -60,6 +71,30 @@ namespace Module2Lesson8tasks
             Console.WriteLine("\nZadanie nr 4\n");
             Console.WriteLine("Podaj liczbe calkowita do ktorej zbudujemy piramide:");
             int userInput4 = int.Parse(Console.ReadLine());
+            int loop4 = userInput4 + 1;
+            int a4 = 1;
+            int b4 = 0;
+            int c4 = 0;
+
+            do
+            {
+                if (b4 == c4)
+                {
+                    b4 = b4 - b4;
+                    Console.WriteLine($"{a4} ");
+                    a4++;
+                    c4++;
+                }
+                else
+                {
+                    Console.Write($"{a4} ");
+                    a4++;
+                    b4++;
+                }
+            }
+            while (a4 < loop4);
+
+
 
             //Zadanie nr 5
             //Napisz program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
