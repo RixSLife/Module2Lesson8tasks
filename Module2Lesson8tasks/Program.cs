@@ -98,6 +98,17 @@ namespace Module2Lesson8tasks
 
             //Zadanie nr 5
             //Napisz program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
+            Console.WriteLine("\nZadanie nr 5\n");
+            Console.WriteLine("Program wyswietli liczby od 1-20 podniesione do potegi 3ciej: \n");
+            int a5 = 1;
+
+            do
+            {
+                double b5 = Math.Pow(a5, 3);
+                Console.WriteLine($"Liczba {a5} podniesiona do potegi trzeciej wynosi: {b5}");
+                a5++;
+            }
+            while (a5 < 21);
 
             //Zadanie nr 6
             //Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru:
